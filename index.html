@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Productivity</title>
+</head>
+
+<body>
+
+<h1>Productivity Tracker</h1>
+
+<input id="cases" type="number" placeholder="Cases">
+
+<button onclick="saveCase()">
+Save
+</button>
+
+<h2>Total Cases:</h2>
+
+<p id="total">0</p>
+
+<script>
+
+let total = 0;
+
+function saveCase(){
+
+let cases =
+Number(document.getElementById("cases").value);
+
+total += cases;
+
+document.getElementById("total").innerText =
+total;
+
+}
+
+</script>
+
+</body>
+
+</html>
